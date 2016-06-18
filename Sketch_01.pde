@@ -1,11 +1,13 @@
 int moveRight = width / 2;
 int moveLeft = width / 2;
-float distance = 300.0;
+int height1 = 200;
+int height2 = 280;
+float distance = 200.0;
 float speed = 5;
 
 void setup() {
-  //size(1280, 720);
-  fullScreen();
+  size(720, 480);
+  //surface.setResizable(true);
   
   ellipseMode(CENTER);
   stroke(255);
@@ -21,24 +23,24 @@ void draw() {
   float mX = mouseX;
   float mY = mouseY;
 
-  float d1 = dist(moveRight, 300, moveLeft, 420);
-  float d2 = dist(mX, mY, moveRight, 300);
-  float d3 = dist(mX, mY, moveLeft, 420);
+  float d1 = dist(moveRight, height1, moveLeft, height2);
+  float d2 = dist(mX, mY, moveRight, height1);
+  float d3 = dist(mX, mY, moveLeft, height2);
   
   if (d1 < distance) {
-    line(moveRight, 300, moveLeft, 420);
+    line(moveRight, height1, moveLeft, height2);
   }
 
   if (d2 < distance) {
-    line(mX, mY, moveRight, 300);
+    line(mX, mY, moveRight, height1);
   }
   
   if (d3 < distance) {
-    line(mX, mY, moveLeft, 420);
+    line(mX, mY, moveLeft, height2);
   }
   
-  ellipse(moveRight, 300, 25, 25);
-  ellipse(moveLeft, 420, 25, 25);
+  ellipse(moveRight, height1, 25, 25);
+  ellipse(moveLeft, height2, 25, 25);
   ellipse(mX, mY, 15, 15);
   
   moveRight += speed;
