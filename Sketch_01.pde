@@ -1,9 +1,7 @@
 int moveRight = width / 2;
 int moveLeft = width / 2;
-int height1 = 200;
-int height2 = 280;
 float distance = 200.0;
-float speed = 5;
+float speed = 3;
 
 void setup() {
   size(720, 480);
@@ -22,6 +20,9 @@ void draw() {
   
   float mX = mouseX;
   float mY = mouseY;
+  
+  float height1 = height * .33;
+  float height2 = height * .66;
 
   float d1 = dist(moveRight, height1, moveLeft, height2);
   float d2 = dist(mX, mY, moveRight, height1);
@@ -39,9 +40,9 @@ void draw() {
     line(mX, mY, moveLeft, height2);
   }
   
-  ellipse(moveRight, height1, 25, 25);
-  ellipse(moveLeft, height2, 25, 25);
-  ellipse(mX, mY, 15, 15);
+  ellipse(moveRight, height1, 10, 10);
+  ellipse(moveLeft, height2, 10, 10);
+  ellipse(mX, mY, 7, 7);
   
   moveRight += speed;
   moveLeft -= speed;
