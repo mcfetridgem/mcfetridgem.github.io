@@ -4,7 +4,8 @@ float distance = 300.0;
 float speed = 5;
 
 void setup() {
-  size(1280, 720);
+  //size(1280, 720);
+  fullScreen();
   
   ellipseMode(CENTER);
   stroke(255);
