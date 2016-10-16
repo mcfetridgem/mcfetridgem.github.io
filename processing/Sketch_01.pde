@@ -1,11 +1,10 @@
 int moveRight = width / 2;
 int moveLeft = width / 2;
-float distance = 200.0;
 float speed = 3;
 
 void setup() {
-  //size(720, 480);
-  size(screen.width, screen.height);
+  size(1920, 1080);
+  //size(screen.width, screen.height);
   //fullScreen();
   //surface.setResizable(true);
   
@@ -19,6 +18,8 @@ void setup() {
 
 void draw() {
   background(200, 235, 250);
+  
+  float distance = height / 0.2;
   
   float mX = mouseX;
   float mY = mouseY;
