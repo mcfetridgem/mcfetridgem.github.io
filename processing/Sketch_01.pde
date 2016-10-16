@@ -4,8 +4,8 @@ float distance = 200.0;
 float speed = 3;
 
 void setup() {
-  //size(720, 480);
-  fullScreen();
+  size(720, 480);
+  //fullScreen();
   //surface.setResizable(true);
   
   ellipseMode(CENTER);
