@@ -1,5 +1,6 @@
 int moveRight = width / 2;
 int moveLeft = width / 2;
+float distance = height * .5;
 float speed = 3;
 
 void setup() {
@@ -18,8 +19,6 @@ void setup() {
 
 void draw() {
   background(200, 235, 250);
-  
-  float distance = height * .5;
   
   float mX = mouseX;
   float mY = mouseY;
