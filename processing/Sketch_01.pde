@@ -19,7 +19,7 @@ void setup() {
 void draw() {
   background(200, 235, 250);
   
-  float distance = height / 0.2;
+  float distance = 200;
   
   float mX = mouseX;
   float mY = mouseY;
