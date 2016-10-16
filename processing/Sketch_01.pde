@@ -1,6 +1,6 @@
 int moveRight = width / 2;
 int moveLeft = width / 2;
-float distance = height * .5;
+float distance = 250;
 float speed = 3;
 
 void setup() {
