@@ -8,7 +8,7 @@ void setup() {
   //size(screen.width, screen.height);
   //size(displayWidth, displayHeight);
   //fullScreen();
-  surface.setResizable(true);
+  //surface.setResizable(true);
   
   ellipseMode(CENTER);
   stroke(255);
