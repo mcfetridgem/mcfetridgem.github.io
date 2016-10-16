@@ -4,9 +4,8 @@ float distance = 250;
 float speed = 3;
 
 void setup() {
-  size(720, 480);
-  //size(screen.width, screen.height);
-  //size(displayWidth, displayHeight);
+  //size(720, 480);
+  size(screen.width, screen.height);
   //fullScreen();
   //surface.setResizable(true);
   
