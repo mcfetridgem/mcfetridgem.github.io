@@ -3,7 +3,7 @@ int moveLeft = width / 2;
 float speed = 3;
 
 void setup() {
-  size(1920, 1080);
+  size(720, 480);
   //size(screen.width, screen.height);
   //fullScreen();
   //surface.setResizable(true);
