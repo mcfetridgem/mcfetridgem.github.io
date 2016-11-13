@@ -3,7 +3,7 @@ float factor = 20;
 
 void setup() {
   size(720, 480);
-  background(0);
+  background(200, 235, 250);
   smooth();
   noStroke();
   fill(255, 255, 255);
@@ -14,7 +14,7 @@ void setup() {
 }
 
 void draw(String t) {
-  background(0);
+  background(200, 235, 250);
   float twidth = textWidth(t);
   text(t, (width - twidth)/2, height/2);
   
