@@ -1,7 +1,7 @@
 void setup() {
   size(200,200);
-  //noLoop();
-  noStroke();
+  noLoop();
+  stroke(0,0,0);
   fill(0,0,0);
 
   text("",0,0);
