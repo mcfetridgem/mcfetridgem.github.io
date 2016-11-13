@@ -14,6 +14,7 @@ void setup() {
 }
 
 void draw(String t) {
+  t = "Hello my name is Matthew";
   background(200, 235, 250);
   float twidth = textWidth(t);
   text(t, (width - twidth)/2, height/2);
