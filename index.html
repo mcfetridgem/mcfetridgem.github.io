@@ -9,6 +9,7 @@
       function drawSomeText(id) {
       var pjs = Processing.getInstanceById(id);
       var text = document.getElementById('inputtext').value;
+      var result = str.fontsize(32);
       pjs.drawText(text); }
       </script>
 </head>
@@ -19,9 +20,9 @@
       <p class="page-description">Testing Processing Sketches in Web. </p>
     </header>
 
-    <h1>Web interaction</h1>
+    <h1>Web Interaction</h1>
     <canvas id="Sketch_01" data-processing-sources="processing\Sketch_01.pde"></canvas>
-    <input type="textfield" value="my text" id="inputtext">
+    <input type="textfield" value="Hello!" id="inputtext">
     <button type="button" onclick="drawSomeText('Sketch_01')">place</button>
 
     <nav>
