@@ -1,6 +1,7 @@
 void setup() {
   size(200,200);
-  //noLoop();
+  background(0);
+  noLoop();
   noStroke();
   fill(255, 255, 255);
 
@@ -9,10 +10,11 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  
 }
 
 void drawText(String t) {
+  background(0);
   float twidth = textWidth(t);
   text(t, (width - twidth)/2, height/2);
 }
