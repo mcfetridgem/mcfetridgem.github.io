@@ -18,9 +18,6 @@ void setup() {
 void draw() {
   background(51);
 
-  //fill(0);
-  text(s, 25, 25, width - 25, height - 25);
-
   for(int i = 0; i <= width; i += factor) {
     for(int j = 0; j <= width; j += factor) {
       float size = dist(mouseX, mouseY, i, j);
@@ -28,4 +25,9 @@ void draw() {
       ellipse(i, j, size, size);
     }
   }
+}
+
+void drawText(String t){
+  float twidth = textWidth(t);
+  text(t, (width - twidth) / 2, height / 2);
 }
