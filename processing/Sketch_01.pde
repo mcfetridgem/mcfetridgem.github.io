@@ -5,18 +5,17 @@ void setup() {
   size(500, 500);
   background(0);
   smooth();
-  //noLoop();
   noStroke();
   fill(255, 255, 255);
 
   max_distance = dist(0, 0, width, height);
   text("",0,0);
-  textSize(24);
+  textSize(36);
 }
 
-void draw() {}
+//void draw() {}
 
-void drawText(String t) {
+void draw(String t) {
   background(0);
   float twidth = textWidth(t);
   text(t, (width - twidth)/2, height/2);
