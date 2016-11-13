@@ -1,18 +1,19 @@
 void setup() {
   size(200,200);
-  noLoop();
-  stroke(#FFEE88);
-  fill(#FFEE88);
-  background(#000033);
+  //noLoop();
+  noStroke();
+  fill(0,0,0);
+
   text("",0,0);
   textSize(24);
 }
 
-void draw() { }
+void draw() {
+  background(0);
+}
 
 void drawText(String t)
   {
-  background(#000033);
   float twidth = textWidth(t);
   text(t, (width - twidth)/2, height/2);
 }
