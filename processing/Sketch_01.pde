@@ -2,9 +2,9 @@ float max_distance;
 float factor = 20;
 
 void setup() {
-  size(200,200);
+  size(500, 500);
   background(0);
-  noLoop();
+  //noLoop();
   noStroke();
   fill(255, 255, 255);
 
