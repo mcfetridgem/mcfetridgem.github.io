@@ -1,6 +1,6 @@
 void setup() {
   size(200,200);
-  noLoop();
+  //noLoop();
   noStroke();
   fill(255, 255, 255);
 
