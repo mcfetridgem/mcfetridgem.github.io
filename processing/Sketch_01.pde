@@ -1,59 +1,31 @@
-int moveRight = width / 2;
-int moveLeft = width / 2;
-float distance = 250;
-float speed = 3;
+float max_distance;
+float factor = 24;
+
+PFont font;
+String s = "Doink de Doink";
 
 void setup() {
-  //size(720, 480);
-  size(screen.width, screen.height);
-  //fullScreen();
-  //surface.setResizable(true);
+  size(720, 480); 
+  smooth();
+  noStroke();
+  max_distance = dist(0, 0, width, height);
   
-  ellipseMode(CENTER);
-  stroke(255);
-  fill(255);
-  
-  // frameRate(30);
-  noCursor();
+  font = createFont("Arial Bold", 48);
+  textSize(48);
+  textAlign(CENTER, CENTER);
 }
 
 void draw() {
-  background(200, 235, 250);
-  
-  float mX = mouseX;
-  float mY = mouseY;
-  
-  float height1 = height * .33;
-  float height2 = height * .66;
+  background(51);
 
-  float d1 = dist(moveRight, height1, moveLeft, height2);
-  float d2 = dist(mX, mY, moveRight, height1);
-  float d3 = dist(mX, mY, moveLeft, height2);
-  
-  if (d1 < distance) {
-    line(moveRight, height1, moveLeft, height2);
-  }
+  //fill(0);
+  text(s, 25, 25, width - 25, height - 25);
 
-  if (d2 < distance) {
-    line(mX, mY, moveRight, height1);
-  }
-  
-  if (d3 < distance) {
-    line(mX, mY, moveLeft, height2);
-  }
-  
-  ellipse(moveRight, height1, 10, 10);
-  ellipse(moveLeft, height2, 10, 10);
-  ellipse(mX, mY, 7, 7);
-  
-  moveRight += speed;
-  moveLeft -= speed;
-  
-  if (moveRight >= width) {
-    moveRight = 0;
-  }
-  
-  if (moveLeft <= 0) {
-    moveLeft = width;
+  for(int i = 0; i <= width; i += factor) {
+    for(int j = 0; j <= width; j += factor) {
+      float size = dist(mouseX, mouseY, i, j);
+      size = size/max_distance * (factor * 2.5);
+      ellipse(i, j, size, size);
+    }
   }
 }
