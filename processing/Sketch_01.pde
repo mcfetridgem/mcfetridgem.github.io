@@ -8,6 +8,7 @@ void setup() {
   noStroke();
   fill(255, 255, 255);
 
+  max_distance = dist(0, 0, width, height);
   text("",0,0);
   textSize(24);
 }
