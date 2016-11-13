@@ -13,9 +13,8 @@ void setup() {
   textSize(36);
 }
 
-//void draw() {}
-
-void draw(String t) {
+void draw() {
+  String t;
   background(0);
   float twidth = textWidth(t);
   text(t, (width - twidth)/2, height/2);
