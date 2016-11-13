@@ -2,19 +2,18 @@ float max_distance;
 float factor = 20;
 
 void setup() {
-  size(500, 500);
+  size(720, 480);
   background(0);
   smooth();
   noStroke();
   fill(255, 255, 255);
 
   max_distance = dist(0, 0, width, height);
-  text("",0,0);
+  text("", 25, 25, width - 25, height - 25);
   textSize(36);
 }
 
-void draw() {
-  String t;
+void draw(String t) {
   background(0);
   float twidth = textWidth(t);
   text(t, (width - twidth)/2, height/2);
