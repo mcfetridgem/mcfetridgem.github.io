@@ -1,6 +1,6 @@
 float max_distance;
 float factor = 24;
-String s = System.getProperty("user.name");
+//String s = System.getProperty("user.name");
 
 PFont font;
 
@@ -18,5 +18,5 @@ void setup() {
 
 void draw() {
   background(200, 235, 250);
-  text(s, 25, 25, width - 25, height - 25);
+  text("Matthew is Awesome!", 25, 25, width - 25, height - 25);
 }
