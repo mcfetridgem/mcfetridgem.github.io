@@ -14,7 +14,7 @@ void setup() {
   textSize(36);
 }
 
-void draw(String t) {
+void draw() {
   background(200, 235, 250);
   fill(255, 255, 255);
   
@@ -25,6 +25,9 @@ void draw(String t) {
       ellipse(i, j, size, size);
     }
   }
+}
+
+void drawText(String t) {
   fill(120, 120, 120);
   float twidth = textWidth(t);
   text(t, (width - twidth)/2, height/2);
