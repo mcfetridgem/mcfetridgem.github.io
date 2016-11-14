@@ -51,7 +51,7 @@
           function drawSomeText(id) {
           var pjs = Processing.getInstanceById(id);
           var text = document.getElementById('inputtext').value;
-          pjs.drawText(text); }
+          pjs.t(text); }
         </script>
 // convenience function to get the id attribute of generated sketch html element
 function getProcessingSketchId () { return 'Sketch01'; }
@@ -64,7 +64,7 @@ function getProcessingSketchId () { return 'Sketch01'; }
                 <canvas id="Sketch_01" data-processing-sources="processing\Sketch_01.pde"
                          width="720" height="480"></canvas>
                 <input type="textfield" value="Hello!" id="inputtext">
-                <button type="button" onclick="drawSomeText('Sketch_01')">place</button>
+                <button type="button" onclick="t('Sketch_01')">place</button>
 	    	</div>
 			<h1>Sketch_01</h1>
     		<p id="description"></p>
