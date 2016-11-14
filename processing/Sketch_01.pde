@@ -7,6 +7,7 @@ void setup() {
   smooth();
   noStroke();
   noCursor();
+  noLoop();
   fill(255, 255, 255);
 
   max_distance = dist(0, 0, width, height);
