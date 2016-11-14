@@ -29,6 +29,7 @@ void draw() {
 }
 
 void drawText(String t) {
+  background(200, 235, 250);
   fill(120, 120, 120);
   float twidth = textWidth(t);
   text(t, (width - twidth)/2, height/2);
