@@ -6,6 +6,7 @@ void setup() {
   background(200, 235, 250);
   smooth();
   noStroke();
+  noCursor();
   fill(255, 255, 255);
 
   max_distance = dist(0, 0, width, height);
