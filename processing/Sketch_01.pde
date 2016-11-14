@@ -1,5 +1,6 @@
 float max_distance;
 float factor = 20;
+String t;
 
 void setup() {
   size(720, 480);
@@ -7,7 +8,6 @@ void setup() {
   smooth();
   noStroke();
   noCursor();
-  redraw();
   fill(255, 255, 255);
 
   max_distance = dist(0, 0, width, height);
@@ -26,10 +26,6 @@ void draw() {
       ellipse(i, j, size, size);
     }
   }
-}
-
-void drawText(String t) {
-  background(200, 235, 250);
   fill(120, 120, 120);
   float twidth = textWidth(t);
   text(t, (width - twidth)/2, height/2);
